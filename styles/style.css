@@ -1,0 +1,285 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  font-size: 1.6rem;
+  /*IE9以前に対応する*/
+  font-size: 0.625rem;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #1a1919;
+  background-color: #efeff0;
+  display: block;
+}
+
+main {
+  padding: 10px;
+}
+
+header {
+  padding: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.header_all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px auto;
+}
+
+.header_all h1 {
+  font-size: 2.5rem;
+}
+
+.user_button_list {
+  text-align: center;
+  padding: 300px 0 50px 0;
+  background-image: url(../images/408230_l.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-bottom-right-radius: 100px;
+}
+
+.user_button_list a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+.user_button_list a:hover {
+  opacity: .7;
+}
+
+.user_button_list a:active {
+  opacity: .7;
+}
+
+.user_button_list #sign_up {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user_button_list #login_button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.user_button_list #guest_login_button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#page_top {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+#page_top a {
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+#page_top a::before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 700;
+  content: '\f139';
+  font-size: 4rem;
+  color: #333;
+}
+
+#about_box {
+  text-align: center;
+  margin: 110px auto;
+  padding: 5px;
+  border-bottom: #333 solid 1px;
+  width: 80%;
+}
+
+#about_box h2 {
+  display: inline-block;
+  font-size: 3.5rem;
+  border-bottom: #333 solid 1px;
+}
+
+#about_box .about_sub {
+  text-align: center;
+  line-height: 1.5;
+  margin: 5px auto 50px;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+}
+
+#about_box #pf_message {
+  text-align: center;
+  line-height: 1.5;
+  margin: 0 auto 60px;
+  letter-spacing: 2px;
+}
+
+.carousel {
+  display: none;
+}
+
+.feature＿description {
+  color: #f9f9f9;
+  font-size: 2rem;
+  /*IE9以前に対応する*/
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.feature＿description .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.feature＿description .function {
+  color: #333;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.feature＿description .function_one_content {
+  background-color: #f3f1e7;
+  margin: 40px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.feature＿description .function_one_content h2 {
+  margin-top: 15px;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+}
+
+.feature＿description .function_one_content .function-image {
+  border-radius: 15%;
+  width: 100%;
+  padding: 4%;
+}
+
+.feature＿description .three {
+  margin-bottom: 0;
+}
+
+.feature＿description .function_two_content {
+  background-color: #f3f1e7;
+  margin: 40px auto;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.feature＿description .function_two_content h2 {
+  margin-top: 15px;
+  letter-spacing: 2px;
+  font-size: 1.7rem;
+}
+
+.feature＿description .function_two_content h2 .title {
+  font-size: 1.7rem;
+}
+
+.feature＿description .function_two_content .function-image {
+  border-radius: 15%;
+  width: 100%;
+  padding: 4%;
+}
+
+footer {
+  margin-top: 10px;
+  padding: 5px 20px;
+  text-align: center;
+  background-color: #e2e2e2;
+  color: #333;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 30px;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a {
+  margin: 5px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+footer ul li a .fab {
+  padding: 0 10px;
+  font-size: 1.2rem;
+}
+
+footer small {
+  font-size: 0.8rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- viewportでwidthを指定していないと初期値で980pxが入る、画面幅が980pxとなり＠mediaでmax-width979pxを
+  指定しても画面幅が980pxなので反映されない -->
+  <title>Toppage</title>
+  <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+ 
+  
+
+</head>
+
+<body>
+  <header>
+  <div class="header_all">
+    <div class="header_logo">
+    <h1><i class="fab fa-pagelines fa-fw"></i>LivLabo.</h1>
+  </div>
+</div>
+</header>
+<main>
+  <div class="user_button_list">
+  
+    <button><a href="#" id="sign_up">sign up</a></button>
+    <button><a href="#" id="login_button">login</a></button>
+    <br>
+    <button><a href="#" id="guest_login_button">GuestLogin</a></button>
+    <p id="login_comment" class="text-muted nomal-font responsive-font-xs">
+      ※GuestLoginはポートフォリオ閲覧用です。
+      <br>
+      ユーザー登録をせず閲覧いただけます。
+  </p>
+  </div>
+
+  
+
+ 
+
+  
+    
+    <!-- <div class="message">
+      <div class="message_image">
+      <img id="main_image" src="images/408230_l.jpg">
+    </div>
+    </div> -->
+
+    <section class="slide_show">
+      <div id="about_box">
+      <h2 id="about_title">About</h2>
+      <p class="about_sub">LivLabo.について</p>
+      <br>
+      <p id="pf_message" class="text-muted nomal-font responsive-font-xs">
+        ※このサイトは、ポートフォリオとして制作している為
+        <br>
+        現段階では定期的にデータを更新しております。
+        <br>
+        予めご了承ください。
+      </p>
+    </div>
+      
+    </section>
+    <section id="carousel" class="carousel">
+      <div class="carousel__main"><img id="carousel__main"></div>
+      <!-- ↑mianの画像エリア -->
+      <div id="carousel__prev" class="carousel__prev"><i class="fas fa-angle-left  fa-fw fa-5x"></i></div>
+      <div id="carousel__next" class="carousel__next"><i class="fas fa-angle-right fa-fw fa-5x"></i></div>
+      <!-- 左右矢印のエリア -->
+      <ul class="carousel__thumbnails"></ul>
+      <!-- サムネイルのエリア -->
+    </section>
+
+    <section class="feature＿description ">
+      <div class="function row">
+        <div class="function_one col-sm-6">
+          <div class="function_one_content">
+            <h2><span class="title">写真を投稿してシェア</span></h2>
+            <img class="function-image" src="images/408230_l.jpg">
+          </div>
+          <div class="function_one_content">
+            <h2><span class="title">いいね・コメント機能</span></h2>
+            <img class="function-image" src="images/408230_l.jpg">
+          </div>
+          <div class="function_one_content three">
+            <h2><span class="title">気になる人をフォロー</span></h2>
+            <img class="function-image" src="images/408230_l.jpg">
+          </div>
+        </div>
+        <div class="function_two col-sm-6">
+          <div class="function_two_content">
+            <h2><span class="title">一覧で投稿が見れる</span></h2>
+            <img class="function-image" src="images/408230_l.jpg">
+          </div>
+          <div class="function_two_content">
+            <h2><span class="title">気になる商品にリンク</span></h2>
+            <img class="function-image" src="images/408230_l.jpg">
+          </div>
+          <div class="function_two_content">
+            <h2><span class="title">DM機能で気軽に会話</span></h2>
+            <img class="function-image" src="images/408230_l.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="page_top"><a href="#"></a></div>
+  </main>
+  <footer>
+    <div>
+      <ul >
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+       
+      </ul>
+      <ul>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+        <li><a href="https://ja-jp.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+    </div>
+    <small>
+
+      <p>&copy;LivLabo.</p>
+    </small>
+  </footer> 
+  <script src="Js/index.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>
