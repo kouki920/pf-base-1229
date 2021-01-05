@@ -9,27 +9,34 @@
   <link rel="stylesheet" href="styles/vendors/bootstrap-reboot.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
- 
-  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ <script src="Js/pace.js"></script>
+ <script src="Js/anime.min.js"></script>
+
 
 </head>
 
 <body>
+  <div id="page_js">
   <header>
   <div class="header_all">
     <div class="header_logo">
-    <h1><i class="fab fa-pagelines fa-fw"></i>LifeLabo.</h1>
+    <h1 class="header_title"><i class="fab fa-pagelines fa-fw"></i>LifeLabo.</h1>
   </div>
 </div>
 </header>
 <main>
   <div class="user_button_list">
-  
-    <button><a href="#" id="sign_up">sign up</a></button>
-    <button><a href="#" id="login_button">login</a></button>
+
+    <button><a href="#" id="sign_up" class="user_button">新規登録</a></button>
+    <button><a href="#" id="login_button" class="user_button">ログイン</a></button>
     <br>
-    <button><a href="#" id="guest_login_button">GuestLogin</a></button>
+    <button id="guest_button"><a href="#" id="guest_login_button" class="user_button">かんたんログイン</a></button>
     <p id="login_comment" class="text-muted nomal-font responsive-font-xs">
       ※GuestLoginはポートフォリオ閲覧用です。
       <br>
@@ -37,18 +44,10 @@
   </p>
   </div>
 
-  
-
- 
-
-  
-    
-   
-
     <section class="slide_show">
       <div id="about_box">
-      <h2 id="about_title">About</h2>
-      <p class="about_sub">LifeLabo.について</p>
+      <h2 id="about_title" >LifeLabo.とは</h2>
+      <p class="about_sub animate__animated animate__bounce " >About</p>
       <br>
       <p id="pf_message" class="text-muted nomal-font responsive-font-xs">
         ※このサイトは、ポートフォリオとして制作している為
@@ -58,7 +57,7 @@
         予めご了承ください。
       </p>
     </div>
-      
+
     </section>
     <section id="carousel" class="carousel">
       <div class="carousel__main"><img id="carousel__main"></div>
@@ -74,42 +73,42 @@
       <div class="function row">
         <div class="function_one col-sm-6">
           <div class="function_one_content">
-            <h2><span class="title">写真を投稿してシェア</span></h2>
+            <h2><span class="title"><i class="far fa-image fa-fw"></i>写真を投稿してシェア</span></h2>
             <img class="function-image" src="images/408230_l.jpg">
           </div>
           <div class="function_one_content">
-            <h2><span class="title">いいね・コメント機能</span></h2>
+            <h2><span class="title"><i class="far fa-thumbs-up fa-fw"></i>いいね・コメント機能</span></h2>
             <img class="function-image" src="images/408230_l.jpg">
           </div>
           <div class="function_one_content three">
-            <h2><span class="title">気になる人をフォロー</span></h2>
+            <h2><span class="title"><i class="fas fa-user-plus fa-fw"></i>気になる人をフォロー</span></h2>
             <img class="function-image" src="images/408230_l.jpg">
           </div>
         </div>
         <div class="function_two col-sm-6">
           <div class="function_two_content">
-            <h2><span class="title">一覧で投稿が見れる</span></h2>
+            <h2><span class="title"><i class="far fa-sticky-note fa-fw"></i>ToDoリストで情報をメモ</span></h2>
             <img class="function-image" src="images/408230_l.jpg">
           </div>
           <div class="function_two_content">
-            <h2><span class="title">気になる商品にリンク</span></h2>
+            <h2><span class="title"><i class="fas fa-link fa-fw"></i>気になる商品にリンク</span></h2>
             <img class="function-image" src="images/408230_l.jpg">
           </div>
           <div class="function_two_content">
-            <h2><span class="title">DM機能で気軽に会話</span></h2>
+            <h2><span class="title"><i class="far fa-comments fa-fw"></i>DM機能で気軽に会話</span></h2>
             <img class="function-image" src="images/408230_l.jpg">
           </div>
         </div>
       </div>
     </section>
-    <div id="page_top"><a href="#"></a></div>
+    <div id="page_top" class="flow"><a href="#"></a></div>
   </main>
   <footer>
     <div>
       <ul >
         <li><a href="#">プライバシーポリシー</a></li>
         <li><a href="#">お問い合わせ</a></li>
-       
+
       </ul>
       <ul>
         <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
@@ -118,11 +117,12 @@
     </div>
     <small>
 
-      <p>&copy;LivLabo.</p>
+      <p>&copy;2021 LivLabo.</p>
     </small>
-  </footer> 
+  </footer>
+</div>
+
   <script src="Js/index.js"></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 </body>
