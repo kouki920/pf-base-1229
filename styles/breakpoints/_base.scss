@@ -13,7 +13,7 @@ body{
   line-height: 1.5;
   letter-spacing: 2px;
   color:rgb(26, 25, 25);
-  background-color:rgb(239, 239, 240);
+  background-color:#f9f9f9;
   display: block;
 }
 
@@ -55,12 +55,14 @@ img {
 
 .header_all{
   display: flex;
-  
+
   justify-content: center;
   margin: 20px auto 10px;
-  
+
   & h1{
     font-size: 2.5rem;
+    animation: bounce;
+    animation-duration: 2s;
   }
 }
 
@@ -73,7 +75,7 @@ img {
   background-size: cover;
   border-radius: 10px;
   border-bottom-right-radius:100px;
-  
+
   & button{
     margin: 6px 2px;
     padding: 5px 2px;
@@ -99,7 +101,7 @@ img {
       font-family: 'Lato', sans-serif;
       color: #dbdbdb;
       cursor: pointer;
-      
+
       &:hover{
         color: #646464;
       }
@@ -120,7 +122,7 @@ img {
   }
 }
 }
-  
+
 
 #page_top{
   width: 60px;
@@ -129,7 +131,7 @@ img {
   right: 0;
   bottom: 0;
   opacity: 0.6;
-  
+
   & a{
     width: 50px;
     height: 50px;
@@ -149,14 +151,16 @@ img {
 
 #about_box{
   text-align: center;
-  margin: 90px auto 40px;
+  margin: 90px auto 50px;
   padding: 5px;
-  
   width: 80%;
+  letter-spacing: 0.5em;
+
 
   & h2{
     display: inline-block;
     font-size: 3rem;
+    text-transform: uppercase;
     border-bottom: #333 solid 1px;
   }
   & .about_sub{
@@ -168,10 +172,17 @@ img {
   }
   & #pf_message{
     text-align: center;
-    margin: 0 auto 10px ;
+    margin: 10px auto 10px ;
     letter-spacing: 2px;
+
+    .letter {
+      display: inline-block;
+      line-height: 1rem;
+    }
+
   }
 }
+
 
 .carousel{
   display: none;
@@ -194,7 +205,7 @@ img {
     color: #333;
     flex-direction:row;
     justify-content: space-between;
-    padding: 20px;
+    // padding: 20px;
   }
   & .function_one_content{
     background-color: #f3f1e7;
@@ -233,7 +244,7 @@ img {
       margin-top: 15px;
       letter-spacing: 2px;
       font-size:1.5rem;
-      
+
       & .title{
         border-bottom: 3px solid #d8d3cd;
       }
@@ -257,8 +268,8 @@ footer{
     display: flex;
     justify-content: center;
     padding: 5px 30px;
-    
-  
+
+
 & li{
   list-style: none;
 
@@ -300,12 +311,12 @@ footer{
   height: 100px;
 
 }
- 
+
 .pace .pace-progress {
   transform: none !important;
   text-align: center;
 }
- 
+
 .pace .pace-progress::after {
   content: attr(data-progress-text);
   display: block;
@@ -315,9 +326,9 @@ footer{
  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
  color: #535353;
 }
- 
 
- 
+
+
 .pace.pace-inactive {
   display: none;
 }
@@ -347,4 +358,3 @@ footer{
     transform: perspective(120px) rotateX(-180deg) rotateY(-180deg);
   }
 }
-
