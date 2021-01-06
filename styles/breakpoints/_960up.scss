@@ -1,0 +1,17 @@
+main{
+  padding: 0 40px;
+}
+header{
+  padding: 10px 40px;
+}
+
+.flow-navi {
+  position: fixed;
+  top: 250px;
+  right: 10px;
+  & li{
+    list-style: none;
+    font-size: 2.5rem;
+    margin: 20px auto;
+  }
+}
