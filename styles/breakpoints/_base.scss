@@ -148,13 +148,22 @@ img {
 }
 
 
-
 #about_box{
   text-align: center;
-  margin: 90px auto 50px;
+  margin: 90px auto 10px;
   padding: 5px;
   width: 80%;
   letter-spacing: 0.5em;
+  & .fadeIn_left {
+    opacity: 0;
+    transform: translate(-50%, 0);
+    transition: 2s;
+
+  & .is-show {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
 
 
   & h2{
@@ -184,8 +193,8 @@ img {
 }
 
 
-.carousel{
-  display: none;
+.flow_nav{
+  visibility: hidden;
 }
 
 .feature＿description {
@@ -207,6 +216,8 @@ img {
     justify-content: space-between;
     // padding: 20px;
   }
+
+
   & .function_one_content{
     background-color: #f3f1e7;
     margin:40px auto ;
@@ -269,7 +280,6 @@ footer{
     justify-content: center;
     padding: 5px 30px;
 
-
 & li{
   list-style: none;
 
@@ -285,6 +295,12 @@ footer{
     }
   }
 }
+  }
+  & .sns_border_bottom{
+    display: block;
+    margin: 0 auto 10px;
+    border-bottom: 1px solid #f5f4f4;
+    width: 50px;
   }
 & small {
   font-size: 0.8rem;
